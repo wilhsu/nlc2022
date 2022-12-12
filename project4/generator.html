@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="stylesheet" type="text/css" href="generator.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js"></script>
+
+    <style>
+      @font-face {
+        font-family: ckFont;
+        src: url(ITCAvantGardeStd-XLt.ttf);
+      }
+
+      @font-face {
+        font-family: ckBold;
+        src: url(ITCAvantGardeStd-Md.ttf);
+      }
+
+      h1{
+        text-align: center;
+        font-family: ckBold;
+        /* color: white; */
+      }
+
+      body{
+          margin: 0;
+          /* background-image: url(assets/ck.gif); */
+          background-color: blue;
+          background-size: cover;
+          background-blend-mode: multiply;
+      }
+
+      #bigCont{
+        display: flex;
+        flex-direction: row;
+      }
+
+      #desControls{
+        width: 200px;
+        height: 400px;
+        margin: 30px;
+        background-color: red;
+        flex-grow: 1;
+        padding: 15px;
+      }
+
+      #desContainer{
+          display: flex;
+          flex-direction: row;
+          flex-grow: 2;
+          /* align-items: center; */
+          justify-content: space-between;
+          align-items: center;
+
+          width: 450px;
+          height: 450px;
+          background-color: rgba(255, 255, 255, 0.6);
+          padding: 15px;
+          margin: 70px;
+          border-radius: 15px;
+      }
+
+      #logo{
+        font-family: ckFont;
+        font-size: 40px;
+        text-align: center;
+        color: white;
+        position: absolute;
+        z-index: 200;
+        margin: 15px;
+      }
+
+      .undType{
+        width: 250px;
+        top:370px;
+        align-items: center;
+        justify-content: center;
+
+        display: none;
+        position: fixed;
+        z-index: 20000;
+      }
+
+      /* .undMat{
+        width: 250px;
+        top:270px;
+        align-items: center;
+        justify-content: center;
+
+        margin-left: 40px;
+        display: none;
+        position: fixed;
+        z-index: 20000; 
+        mix-blend-mode: screen;
+      } */
+
+      .undMat{
+
+        width:200px;
+        height: 200px;
+        
+        -webkit-mask-image: url(assets/briefs.svg);
+        mask-image: url(assets/briefs.svg);
+        -webkit-mask-repeat: no-repeat;  
+        mask-repeat: no-repeat;  
+      }
+
+      #undMatDisplay{
+        font-family: ckFont;
+        font-size: 30px;
+        /* text-align: center; */
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-transform: uppercase;
+        transform: rotate(90deg);
+        z-index: 3000;
+      }
+
+      #undNameDisplay{
+        font-family: ckFont;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        position: absolute;
+        z-index: 250;
+        margin: 15px;
+
+        margin-top:65px;
+      }
+
+      /* #bgImg{
+        position: absolute;
+        z-index: -10000;
+      } */
+
+      .sidebars{
+          width: 100px;
+          height: 425px;
+          background-color: black;
+      }
+
+      #mainDesign{
+          width: 250px;
+          height: 425px;
+          /* background-color: black; */
+      }
+
+      #materialText{
+        margin-left: 100px;
+      }
+
+      #waistband{
+        margin-right: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <h1>Calvin Klein Underwear Packaging Generator</h1>
+
+    <div id="bigCont">
+      <div id="desContainer">
+        <div id="materialText" class="sidebars">
+          <p id="undMatDisplay"></p>
+        </div>
+
+        
+        <div id="mainDesign">
+          
+          <p id="logo">Calvin Klein</p>
+          <p id="undNameDisplay"></p>
+          
+          <img id="bgImg" src="assets/ck1.jpeg">
+
+          <div>
+            <img class="undType" id="boxers" src="assets/briefs.svg">
+            <img class="undType" id="boxerBriefs" src="assets/boxerbriefs.svg">
+            <img class="undType" id="trunks" src="assets/trunks.svg">
+          </div>
+
+          <div class="mask">
+            <img class="undMat" id="polyester" src="assets/polyester.png">
+          </div>
+        </div>
+
+        <div id="waistband" class="sidebars">
+        </div>
+      </div>
+
+      <div id="desControls">
+        <button type="button" value="Random" onclick="imgchange();">Randomize Background Image</button><br>
+
+        <label for="undName">Underwear Name: </label>
+        <input type="text" id="undName" name="undName"><br>
+
+        <label for="undType">Underwear Type: </label>
+        <button type="button" onclick="showHide('boxers')">Boxers</button>  <button type="button" onclick="showHide('boxerBriefs')">Boxer Briefs</button> <button type="button" onclick="showHide('trunks')">Trunks</button><br>
+
+        <!-- <label for="undMat">Material: </label>
+        <input type="number" id="undMat" name="undMat">%<input type="text" id="undMat" name="undMat"><br> -->
+        <label for="undMat">Material:</label>
+        <input type="text" id="undMat" name="undMat"><br>
+
+
+      </div>
+    </div>
+
+    <script src='generator.js'></script>
+  </body>
+</html>

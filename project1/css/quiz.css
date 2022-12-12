@@ -1,0 +1,119 @@
+a:visited, :link, :hover{
+    text-decoration: none;
+    color: #ec4e73;
+}
+
+body{
+    font-size:46px;
+    font-family: puffin-arcade-regular,sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #ec4e73;
+
+    background-image: url(../assets/img/pinkslay.gif);
+    background-size: cover;
+}
+
+button{
+    font-size:36px;
+    font-family: puffin-arcade-chrome,sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    background-color: #ea7792;
+
+    border: 3px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hidden{
+  display: none;
+  font-size: 80px;
+}
+
+#messages, button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    /* justify-content: center; */
+
+}
+
+#messages{
+    z-index: 100;
+    margin-bottom: 200apx;
+}
+
+
+/* Input field */
+input{
+    padding: 2px;
+    width: 200px;
+    text-align: center;
+    color: #ec4e73;
+
+    font-size:46px;
+    font-family: puffin-arcade-chrome,sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    border: 3px solid #ec4e73;
+    border-radius: 10px;
+    background-color: white;
+}
+
+section{
+    margin: 10px;
+}
+
+input:focus{
+  outline: none;
+}
+
+#bigcont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 60vh;
+}
+
+img{
+    width: 40%;
+}
+
+.question{
+    width: 600px;
+    text-align: center;
+}
+
+#prev{
+    float: right;
+}
+
+#prev:hover{
+    transform: rotate(-30deg);
+}
+
+#next{
+    float: left;
+}
+
+#next:hover{
+    transform: rotate(30deg);
+}
+
+#forward{
+    margin-top: 15%;
+    float: right;
+    background-color: white;
+}
+
+#back{
+    margin-top: 15%;
+    float: left;
+    background-color: white;
+}

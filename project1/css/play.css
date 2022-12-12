@@ -1,0 +1,85 @@
+a:visited, :link, :hover{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-image: url(../assets/img/pg.gif);
+    background-size: cover;
+}
+
+.bigcontainer{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.isfor{
+    text-align:center;
+
+    font-size:46px;
+    font-family: puffin-arcade-chrome,sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+
+    padding-right: 35px;
+
+}
+
+
+
+#visualcontainer{
+    /* border-radius: 15px; */
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+}
+
+#imagecontainer{
+    /* width: 30%; */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+button{
+    z-index: 100;
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    /* margin-bottom: 25px; */
+
+    font-size:30px;
+    font-family: puffin-arcade-chrome,sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    
+    padding: 10px;
+    border-radius: 15px;
+    border-style: none;
+    box-shadow: 9px 9px #F4A0B4;
+
+    background-color: #e9345f;
+    color: white;
+}
+
+#next{
+    float: right;
+}
+
+#back{
+    float: left;
+}
+
+button:hover {
+    background-color: #dc2d56;
+}
+
+button:active {
+    background-color: #dc2d56;
+    box-shadow: 5px 5px #d8798f;
+    transform: translateY(4px);
+  }

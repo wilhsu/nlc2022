@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    background-color: red;
+}
+
+#bigContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.sidebars{
+    width: 200px;
+    height: 850px;
+    background-color: black;
+}
+
+#mainDesign{
+    width: 500px;
+    height: 850px;
+    background-color: black;
+
+}

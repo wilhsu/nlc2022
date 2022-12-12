@@ -1,0 +1,333 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>sketch 3</title>
+        <style>
+            body{
+                background-color: black;
+                cursor: default;
+            }
+
+            h1, h2, h3{
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 30px;
+                margin-left: 4%;
+                cursor: text;
+            }
+
+            h1{
+                font-size: 70px;
+            }
+
+            h2{
+                font-weight: 100;
+            }
+
+            #text{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 24px;
+                text-align: left;
+                display: block;
+                margin-left: 20%;
+                margin-right: 20%;
+                color: white;
+                cursor: text;
+            }
+
+            p{
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 11px;
+                text-align: center;
+                color: grey;
+                /* cursor: url('assets/cursor.cur'), auto; */
+            }
+
+            .china:hover{
+                /* color: red; */
+                cursor: not-allowed;
+                
+            }
+
+            .china{
+                color: black;
+                animation: chinared;
+                animation-duration: .2s;
+                animation-delay: 2.8s;
+                animation-iteration-count: 10;
+                animation-timing-function: ease-out;
+                animation-fill-mode: forwards;
+
+            }
+
+            .frame1{
+                color: white;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-out;
+            }
+
+            #map{
+            position: fixed;
+            z-index: -2;
+            }
+
+            .frame1, #frame2, #frame3, #frame4, #frame5, #frame6, #frame7, #frame8, #frame9, #frame10, #frame11, #frame12, #frame13, #frame14{
+                animation: spark 0.2s;
+                animation-iteration-count: 10;
+                animation-timing-function: ease-in-out;
+            }
+
+            #frame3v, #frame4v, #frame5v, #frame6v, #frame7v, #frame8v, #frame9v, #frame10v, #frame11v, #frame12v, #frame13v, #frame14v{
+                animation: accessed 0.2s ;
+                animation-iteration-count: 10;
+                animation-timing-function: ease-in-out;
+            }
+
+            #frame5bv{
+                animation: accessedblack 0.2s;
+                animation-iteration-count: 10;
+                animation-timing-function: ease-in-out;
+            }
+
+            #frame9b, #frame10b, #frame11b, #frame12b, #frame13b{
+                color: black;
+                animation: entering 0.2s  ;
+                animation-iteration-count: 10;
+                animation-timing-function: ease-in-out;
+            }
+
+            #frame2{
+                animation-delay: .4s;
+            }
+
+            #frame3, #frame3v{
+                animation-delay: .6s;
+            }
+
+            #frame4, #frame4v{
+                animation-delay: .8s;
+            }
+
+            #frame5, #frame5v, #frame5bv{
+                animation-delay: 1s;
+            }
+
+            #frame6, #frame6v{
+                animation-delay: 1.2s;
+            }
+
+            #frame7, #frame7v{
+                animation-delay: 1.4s;
+            }
+
+            #frame8, #frame8v{
+                animation-delay: 1.6s;
+            }
+
+            #frame9, #frame9v, #frame9b{
+                animation-delay: 1.8s;
+            }
+
+            #frame10, #frame10v, #frame10b{
+                animation-delay: 2s;
+            }
+
+            #frame11, #frame11v, #frame11b{
+                animation-delay: 2.2s;
+            }
+
+            #frame12, #frame12v, #frame12b{
+                animation-delay: 2.4s;
+            }
+
+            #frame13, #frame13v, #frame13b{
+                animation-delay: 2.6s;
+            }
+
+            #frame14, #frame14v{
+                animation-delay: 2.8s;
+            }
+
+            @keyframes chinared{
+                from {color: black;}
+                to {color: red;}
+            }
+
+            /* p>span{
+                animation: spark 1s ;
+            } */
+
+            @keyframes spark{
+                from{color: grey;}
+                to{color: white;}
+                /* 100%{color: grey;} */
+            }
+
+            @keyframes accessed{
+                0%{color: grey;}
+                50%{color: lime;}
+                100%{color: grey;}
+            }
+
+            @keyframes accessedblack{
+                0%{color: black;}
+                50%{color: lime;}
+                100%{color: black;}
+            }
+
+            @keyframes entering{
+                0%{color: black;}
+                50%{color: white;}
+                100%{color: black;}
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>US Chip Curbs Will Highlight Cracks in China's AI Strategy
+        </h1>
+        <h2>Computing power is critical to artificial intelligence, and Washington is taking that away from its fiercest rival.</h2>
+        <br><br>
+        <h3>By Tim Culpan
+                <br>September 12, 2022 at 3:00 PM EDT</h3>
+        <br><br>
+        <!-- <img id="map" src="assets/worldmap.png"> -->
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^::::::::::<span id="frame10v">:^^^^^</span><span id="frame11v">^^^^::</span><span id="frame12v">::...</span><span id="frame13v">..:::</span><span id="frame14v">:^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^::::....&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="frame9v">..:</span>.........&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="frame14v">..:</span>:..:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:^^^^^^^^^^^^^^^^::^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:^^^:.&nbsp;&nbsp;......&nbsp;&nbsp;&nbsp;<span id="frame6v">.</span><span id="frame7v">.::</span><span id="frame8v">:.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.::^^^^^^^^^^^^^^:::::::::^^^^^^^^^^^:::^^:::::^^^^^^^^^^^^^^^:. .:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^::^::::^^::.....&nbsp;&nbsp;&nbsp;<span id="frame5v">.</span><span id="frame6v">::</span>:<span id="frame8v">..</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.:^^^^^^^^^^^^^^^^:.. .:.::^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^::::..:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^::..:::::::::::.:::.....<span id="frame5v">:</span>^^^^<span id="frame8v">:...</span><span id="frame7v">...</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.:^^^^^^^^^^^^^^^^^^::^^::^^^^^^^^^^^^^^^^^^:::::::^^^^^^^^^^^^:::::. ....:^^^^^^^^^^^^^::::^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^::::::.:::::::::.:.:....:<span id="frame5v">^</span>^^^^^^^^^^^<span id="frame6v">:.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:...:::^^^^^^^^^^^:.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..^^^^^^^^^^^^^:.::::::^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^:&nbsp;&nbsp;.....:::.^:..:..:. .. ..<span id="frame4v">.:</span>^^^^^^^^^^^<span id="frame6v">.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^: :^^^^^^:.:::::..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;.&nbsp;....&nbsp;..^^^^^:..:::^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^<span id="frame12v">^::.</span><span id="frame13v">...::</span><span id="frame14v">::::</span>^^^^^::::::::.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.::::..^:..&nbsp;&nbsp;..<span id="frame4v">^</span>&nbsp;&nbsp;..::^^^^^^<span id="frame5v">:..</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;....^^^^^^^^^^^^^^^^^^^^^^^:::..::^^^^^^^^^^^:.:^::^^:&nbsp;&nbsp;:..&nbsp;&nbsp;..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.....&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.....:^:^^^:::^^
+        </p>
+        <p>.::^^^^<span id="frame11v">^:.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..........::..:&nbsp;&nbsp;.::&nbsp;.^<span id="frame3">^</span>:..&nbsp;&nbsp;.::^^^^^^<span id="frame4v">.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...::^^^^^^^^^^^^^^^^^^^^^:..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...::^::^::.:...&nbsp;&nbsp;..&nbsp;&nbsp;..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;&nbsp;&nbsp;&nbsp;.
+        </p>
+        <p>.&nbsp;...:<span id="frame10v">^:.</span>..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..:^<span id="frame3">^</span>::.. ...:^^^^<span id="frame4v">:.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...:^^^^^::::.:^^^^^^^^^^^^^^.&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;........&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </p>
+        <p>:^:::^:<span id="frame10v">:</span>..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..:..::<span id="frame3">:</span>:::.&nbsp;&nbsp;.:^^^^^^<span id="frame3v">:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:^^^^^^^^^:....:^^^^^^^^^^^::.&nbsp;&nbsp;&nbsp;&nbsp;.:.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.
+        </p>
+        <p>:^^^^^^<span id="frame9v">^.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="frame5v">.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:^^^^::<span id="frame2">^</span>:...::::^^^^^^^^<span id="frame3v">:.</span>.&nbsp;:^^^^^^^^^^^^^^^^^^^^^^^^^:.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.:^&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.::...&nbsp;&nbsp;&nbsp;..:::
+        </p>
+        <p>:^^^^^^:::<span id="frame8v">:..</span>&nbsp;<span id="frame6v">.::</span><span id="frame5v">:^</span><span id="frame4">^::</span>:...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.:^^^^^^<span id="frame2">^</span>:&nbsp;&nbsp;&nbsp;&nbsp;.:..:^^^^^<span id="frame2">^</span>^^^:^^^^^^^^^^^^^^^^^^^^:::^^^^....&nbsp;&nbsp;.:^:...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.:::::.:^^:..::^:^^^^^
+        </p>
+        <p>:^^^^^^^^^::<span id="frame7v">:::</span>^^^^^^^<span id="frame3">^</span>^^:..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...::^<span id="frame2">^</span>:.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:^^^<span id="frame2">^</span>^^^^^^^^^^^^^^^^^^^^^^^^::&nbsp;.^^^^^:.:..:^:.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.:^^^^^^^^:&nbsp;&nbsp;&nbsp;:^^^^^^^^^
+        </p>
+        <p>:^^^^^::^^^^^^^^^^^^^^<span id="frame3">^^</span>^<span id="frame2">^::</span><span class="frame1">.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="frame1">.^.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="frame1">.</span><span id="frame2">^</span>^^^^^^^^^^^^^^^^^^^^^^^^:&nbsp;.:&nbsp;&nbsp;:^::.&nbsp;.....&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="china">~!~.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..::^^^^^^:&nbsp;.:^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^<span class="frame1">..</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.....<span class="frame1">.:</span>^^^^^^^^^^^^^^^^^^^^^^^^::^:....&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="china">.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="china">.^75PPJ:.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:.:^^^^^::^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<span class="frame1">:.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.:<span class="frame1">:^:</span>.<span id="frame2">.</span><span id="frame3">:^^</span><span id="frame4">^^^^</span><span id="frame5">^^^^^</span><span id="frame6">^^^^^</span><span id="frame7">^^^^^^</span><span id="frame7">^^^^::.</span><span id="frame9b">........</span><span id="frame10b">........</span><span id="frame11b">........</span><span id="frame12b">.........</span><span id="frame13b">............</span><span class="china">^!YJ^</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="china">^?Y55555Y?!</span>&nbsp;&nbsp;:::^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<span class="frame1">.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="frame1">....::</span><span id="frame2">^^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^::::.&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:^:::..&nbsp;&nbsp;&nbsp;.^:&nbsp;&nbsp;&nbsp;.:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="china">:J5P5P5?7^..</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="china">.7?Y55555P55!</span>:.:^:.:^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<span class="frame1">.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="frame1">.:</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.:^^:::..::&nbsp;&nbsp;...:....:.&nbsp;&nbsp;&nbsp;&nbsp;:^:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="china">:^!J5555555P5YYYJ?JYY5555YY5J7!~</span>::^^:.::^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:<span id="frame8">^^^^^</span><span id="frame7">^^^^^</span><span id="frame6">^^^^^</span><span id="frame5">^^^^^</span><span id="frame4">^^^^</span><span id="frame3">^^^</span><span id="frame2">^^^</span><span class="frame1">:.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="frame1">:</span><span id="frame2">^^^</span><span id="frame3">^^^</span><span id="frame4">^^^^</span><span id="frame5">^^^^^</span><span id="frame6">^^^^^</span><span id="frame7">^^^^^</span><span id="frame7">^^^^^^</span><span id="frame9">^^^^</span><span id="frame10v">....</span><span id="frame11v">.:::</span><span id="frame12v">::.^</span>:::^:.:^.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="china">75P55555555555555P5555555?7~:</span><span id="frame13">..^^^::.</span><span id="frame12">^^^^^^^</span><span id="frame11">^^^^^^</span><span id="frame10">^^^^^^</span><span id="frame9">^^^^</span>
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<span class="frame1">:..</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="frame1">.:</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:.&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="frame13v">:::^^</span><span id="frame14v">:::</span>^^^^::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="china">:^JP55555555555555555555Y~</span>^^:::::..:^^^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<span class="frame1">...</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="frame1">..</span>&nbsp;&nbsp;<span class="frame1">:</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;&nbsp;&nbsp;......&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="china">.7J55PPPP555555555555555J</span>^^^^::^^^^^^^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<span class="frame1">:..</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="frame1">:::::^</span><span id="frame2">^:.</span>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="china">.^!!~~::75555555555557</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<span class="frame1">::::</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="frame1">.</span>^^^^^^^^:<span id="frame3">:</span>::^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.:.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.....:::::.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="china">^Y5YJY555YY?~</span>.^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<span id="frame2">^</span>^^^^:&nbsp;&nbsp;&nbsp;&nbsp;::^:.:^^^:<span id="frame3">:</span>:::::^^^^^^^^^^^^^^^^^^^^^^^^^^^^:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.:.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.^^^^^^:.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.::^:&nbsp;&nbsp;&nbsp;.:.&nbsp;<span class="china">^7J~^^</span>:::^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<span id="frame2">^</span>^^^^^^^::....&nbsp;&nbsp;:::^^^<span id="frame3">^</span>^:::^^^^^^^^^^^^^^^^^^^^^^^^^^^^:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;&nbsp;&nbsp;&nbsp;..::^^^^^^^^:&nbsp;&nbsp;&nbsp;&nbsp;.:^^^^^:..&nbsp;&nbsp;&nbsp;&nbsp;.:^^^^^:.:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<span id="frame2">^</span>^^^^^^^^^^^^^:::.&nbsp;.^^^^<span id="frame4">^:::</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^:.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;....:^^^^^^^^^^^^:&nbsp;&nbsp;.^^^^^^^^^:.:.&nbsp;&nbsp;.^^^^^^:::^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<span id="frame3">^</span>^^^^^^^^^^^^^^^^^^:::::.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="frame5bv">^^</span><span id="frame5v">.</span><span id="frame6v">.:</span>^^^^^^^^^^^^^^^^^^^^^^^^:.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.:^^^^^^^^^^^^^:..:^^^^^^^^::^^::^^^^^^^^:.:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<span id="frame3">^</span>^^^^^^^^^^^^^^^^^^^^^^^^&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="frame6v">.</span><span id="frame7v">..:</span>^^^^^^^^^^^^^^^^^^^^^^:..:::::::..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.^^^^^^^^^^^^^^^^^::^^^^^^^:::.:^^^^::..^^^:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<span id="frame3">^</span>^^^^^^^^^^^^^^^^^^^^^^^:.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="frame8v">::</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.::^^^^^^^^^^^^^^^^^^^^^^^^^^^^:.&nbsp;.^^:.&nbsp;&nbsp;&nbsp;.::::::^::^^^^^^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<span id="frame4">^</span>^^^^^^^^^^^^^^^^^^^^^^^^.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="frame9v">...</span><span id="frame10v">::</span>^^^^^^^^^^^^^^^^^^^^^^^^^:.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^.&nbsp;.:^:...^..:^::::.:...::^^::^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^^<span id="frame4">^</span>^^^^^^^^^^^^^^^^^^^^^^^^^:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="frame10v">.</span>^^^^^^^^^^^^^^^^^^^^^^^^^^.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:::::::^^::^:^^^^^^:.&nbsp;&nbsp;..:::^:^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^^<span id="frame4">^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="frame10v">.:</span>^^^^^^^^^^^^^^^^^^^^^^^^^^:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.^^^^:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^::^:^^::::^^::^:::^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^^<span id="frame5">^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="frame11v">.^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.^^:.&nbsp;:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:...&nbsp;&nbsp;.:^:&nbsp;.^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^^<span id="frame5">^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="frame11v">:</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^:.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.::^^:&nbsp;&nbsp;.^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^::.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;.^^^^^^^^^^^^^^^^::
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^^<span id="frame5">^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="frame12v">..:</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.^^^^.&nbsp;.^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:^^^^^^^::^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^^<span id="frame6">^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="frame13v">.:</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.:^^^^:::^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.:^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^^<span id="frame6">^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="frame13v">.^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^^<span id="frame6">^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="frame14v">.:</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^.&nbsp;....:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^.&nbsp;&nbsp;...:::::..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^^<span id="frame6">^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="frame14v">.:</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^::^^^^^^^^^^::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.^^^^^^^^^^^^:::^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^^<span id="frame6">^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.:::^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:::::^^^^^^^^^^^^::.:^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^^<span id="frame7">^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^.&nbsp;&nbsp;&nbsp;&nbsp;:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:.:^^^^^^^^^^::.:^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^^<span id="frame7">^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:.&nbsp;&nbsp;&nbsp;:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:..^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^^<span id="frame8">^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:&nbsp;&nbsp;&nbsp;.:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^^<span id="frame8">^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:.&nbsp;&nbsp;:^^^^:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^^<span id="frame8">^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^::..:^^^^^^^^^^^^^^^:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^^<span id="frame8">^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^^<span id="frame9">^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^^<span id="frame9">^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^^<span id="frame9">^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:..:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^::::^^^^^^^^^^^^^:::::::.....::::.::^^:::::::::::^^^^^^^^^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^^<span id="frame9">^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:.&nbsp;&nbsp;.^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^::...&nbsp;&nbsp;&nbsp;&nbsp;......:::^^:.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.::::^^^^^^^^^^^^^^
+        </p>
+        <p>:^^^^^^^^<span id="frame9">^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...&nbsp;&nbsp;&nbsp;:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^:::::::::::::.....:.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..::::^^^^^^^
+        </p>
+        <p>:^^^^^^^<span id="frame10v">^</span>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^::::^^^^^^^^^^^^:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:^^^^^^^^^^^^^^^^^^^^^^^^^^:..&nbsp;&nbsp;&nbsp;.....&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.:^^^^^
+        </p>
+        <p><span id="frame12v">:^^^</span><span id="frame11v">^^^</span><span id="frame10v">^^</span>^^^^^^^^^^^^^^^^^^^::..:::::::^^^:.&nbsp;&nbsp;&nbsp;.......:..::.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.^^^^^^^^^^^^^^^^^^^^^^:...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="frame14v">.::^</span><span id="frame13v">^^^^</span>
+        </p>
+        <br><br>
+        <p id="text">Tighter restrictions on US semiconductor and equipment sales are set to test China's artificial intelligence superpowers as Washington removes a key plank of next-generation technological development.
+                <br><br>
+                The Biden Administration plans to broaden curbs on shipments of AI chips and chip-making tools, with the Commerce Department set to publish new rules next month, Reuters reported Sunday. Releasing the regulations would codify restrictions already outlined in letters to equipment companies including KLA Corp., Lam Research Corp. and Applied Materials Inc., it reported.
+                <br><br>
+                The US government last month also imposed new export restrictions on Nvidia Corp., requiring the Californian graphics and AI chip designer to get a license before shipping its A100 or H100 products to China or Russia. The A100, released in 2020, is used for AI and data analytics and is 20 times more powerful than Nvidia's prior generation of processors. The H100 is yet to go on sale and will be the company's most-advanced chip.
+                <br><br>
+                Taken together, these stricter rules on chip designers and those providing manufacturing equipment will stymie China's AI development.
+                <br><br>
+                Artificial intelligence is a general term that encompasses many disciplines. Among them, machine learning crunches vast amounts of data to find patterns and predict results. Computer vision is another field that categorizes, sorts, and pinpoints visual information. Image recognition for use in security and tracking the movement of people and vehicles is among the most widespread applications in China.
+                <br><br>
+                Broadly speaking, AI relies on three distinct realms that feed into each other: Data, algorithms, and processing power. A major reason China is considered a superpower in this field is due to corporate and government collection of reams of data including facial and fingerprint images, financial information, vehicle movements and network surveillance. Larger repositories of information give AI models more data to learn from, improving results. 
+                <br><br>
+                Yet the models themselves are built on algorithms, sophisticated mathematical equations that crunch data and find patterns. A simple example: A computer might see a photo of a duck and immediately conclude that it's not a dog because it has only two legs, because the algorithm specifies that dogs have four legs. In modern computer science, these algorithms are increasingly developed by machines themselves, such as in neural networks where the inner-workings of the algorithm are largely a mystery even to the system designer. Deep learning is a fancy term for the use of a neural network with many layers.
+                <br><br>
+                It takes a better model, trained with more data, to distinguish a cat from a dog, or a duck from a rooster. Deep learning may then be needed to sort dog breeds and bird species. 
+                <br><br>
+                Then there's processing power. This comes down to raw, brute force number-crunching, and is where the US is the undisputed king. Sophisticated algorithms fed by large stores of data require lots of computational work to derive an answer as to what defines a duck, or a dog. Nvidia and Advanced Micro Devices Inc. are the global leaders, thanks in large part to their access to the manufacturing prowess of Taiwan Semiconductor Manufacturing Corp., which uses equipment from KLA, Applied Materials and Lam Research. Rules unveiled during the Trump administration, and maintained under President Joe Biden, limited Chinese access to TSMC's facilities.
+                <br><br>
+                Nvidia's A100 chip is manufactured using TSMC's 7-nanometer manufacturing technology. Its forthcoming H100 will be built on even more advanced 4nm geometries. The smaller the node, the more powerful and energy-efficient the chip. China, by contrast, has been limited by US sanctions to 14nm, ensuring that the country's semiconductor technology remains stuck in time. While Beijing is trying to develop its own equipment and chip-making prowess, progress has been slow and will be even more stymied as Washington further tightens restrictions.
+                <br><br>
+                Without the ability to progress in processing power, China will be stuck trying to leverage its data and algorithms to remain a global AI leader. The neural networks that create the algorithms are developed through constant iteration which requires lots of computation. It's not enough to be a master in two out of the three.
+                <br><br>
+                Chinese engineers and computer scientists will no doubt find innovative ways around these new restrictions, but the US is not sitting still either. By hindering its fiercest rival, Washington gives itself another chance to pull away in the global AI race.
+        </p>
+    </body>
+</html>
