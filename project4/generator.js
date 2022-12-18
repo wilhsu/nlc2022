@@ -26,29 +26,75 @@ function imgchange() {
     document.getElementById("undMatDisplay").innerHTML = document.getElementById("undMat").value;
   }
 
-  function showHide(boxers){
-    let x = document.getElementById(boxers);
-    if (x.style.display == "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
+  // function underwearType(){
+  //   var 
+  // }
+  
 
-  function showHide(boxerBriefs){
-    let x = document.getElementById(boxerBriefs);
-    if (x.style.display == "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
+  function underwearMaterial() {
+    var um = document.getElementById("undMat").value;
+    console.log(um);
+    // document.getElementById("demo").innerHTML = x;
 
-  function showHide(trunks){
-    let x = document.getElementById(trunks);
-    if (x.style.display == "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
+    let undies = document.getElementById("undie");
+    undies.src = `assets/${um}.png`;
+}
+
+const briefs = document.getElementById("briefs");
+const boxerbriefs = document.getElementById("boxerbriefs");
+const trunks = document.getElementById("trunks");
+
+function underwearType(){
+  console.log(event.target.value);
+  ut = event.target.value;
+
+  let undietype = document.getElementById("undie");
+  undietype.style.maskImage = `url(assets/${ut}.png)`;
+  undietype.style.webkitMaskImage = `url(assets/${ut}.png)`;
+}
+
+
+// var type = document.getElementById("undie").style.maskImage;
+// var typew = document.getElementById("undie").style.webkitMaskImage;
+
+
+// briefs.addEventListener('click', () => {
+//   type = "url(assets/briefs.png)";
+//   typeW = "url(assets/briefs.png)";
+// });
+
+// boxerbriefs.addEventListener('click', () => {
+//   type = "url(assets/boxerbriefs.png)";
+//   typeW = "url(assets/boxerbriefs.png)";
+// });
+
+// trunks.addEventListener('click', () => {
+//   type = "url(assets/trunks.png)";
+//   typeW = "url(assets/trunks.png)";
+// });
+
+
+
+
+// function underwearType(){
+//     if (briefs == true){
+//     document.getElementById("undie").style.maskImage = "url(assets/briefs.png)"
+//     document.getElementById("undie").style.webkitMaskImage = "url(assets/briefs.png)"
+//     } else if (boxerbriefs == true){
+//       document.getElementById("undie").style.maskImage = "url(assets/boxerbriefs.png)"
+//       document.getElementById("undie").style.webkitMaskImage = "url(assets/boxerbriefs.png)"
+//       } else {
+//         document.getElementById("undie").style.maskImage = "url(assets/trunks.png)"
+//         document.getElementById("undie").style.webkitMaskImage = "url(assets/trunks.png)"
+//       }
+// }
+
+// function underwearType(){
+//   var ut = document.getElementById("undType").value;
+//   console.log(ut);
+
+//   let type = document.getElementById("undie").style.maskImage;
+//   let typeW = document.getElementById("undie").style.webkitMaskImage;
+//   type = `url(assets${ut}.png)`;
+//   typeW = `url(assets${ut}.png)`;
+// }

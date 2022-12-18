@@ -15,16 +15,22 @@
         src: url(ITCAvantGardeStd-Md.ttf);
       }
 
+      @font-face {
+        font-family: ckReg;
+        src: url(ITCAvantGardeStd-Bk.ttf);
+      }
+
       h1{
+        margin-top:50px;
         text-align: center;
         font-family: ckBold;
-        /* color: white; */
+        color: white;
       }
 
       body{
           margin: 0;
-          /* background-image: url(assets/ck.gif); */
-          background-color: blue;
+          background-image: url(assets/ck.gif);
+          background-color: rgb(42, 42, 42);
           background-size: cover;
           background-blend-mode: multiply;
       }
@@ -35,12 +41,24 @@
       }
 
       #desControls{
+        text-align: center;
+        font-family: ckReg;
         width: 200px;
         height: 400px;
         margin: 30px;
-        background-color: red;
+        color: white;
+        /* background-color: red; */
         flex-grow: 1;
         padding: 15px;
+      }
+
+      #desControls button, input{
+        padding: 10px;
+        font-family: ckReg;
+        background-color: white;
+        border-radius: 15px;
+        border-style: hidden;
+        margin: 5px;
       }
 
       #desContainer{
@@ -94,14 +112,31 @@
       } */
 
       .undMat{
+        display: block;
+        /* width: 250px; */
+        height: auto;
+        margin: 0 auto;
+        width: 250px;
+        top:370px;
+        align-items: center;
+        justify-content: center;
 
-        width:200px;
-        height: 200px;
-        
-        -webkit-mask-image: url(assets/briefs.svg);
-        mask-image: url(assets/briefs.svg);
-        -webkit-mask-repeat: no-repeat;  
-        mask-repeat: no-repeat;  
+        /* display: none; */
+        position: fixed;
+        z-index: 20000;
+        mix-blend-mode: screen;
+        filter: brightness(100%) contrast(100%);
+      }
+
+      .mask{
+        -webkit-mask-image: url();
+        mask-image: url();
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        -webkit-mask-size: 100%;
+        mask-size: 100%;
       }
 
       #undMatDisplay{
@@ -125,6 +160,8 @@
         position: absolute;
         z-index: 250;
         margin: 15px;
+        width: 200px;
+        word-wrap:break-word;
 
         margin-top:65px;
       }
@@ -175,13 +212,15 @@
           <img id="bgImg" src="assets/ck1.jpeg">
 
           <div>
-            <img class="undType" id="boxers" src="assets/briefs.svg">
+            <!-- <img class="undType" id="boxers" src="assets/briefs.svg">
             <img class="undType" id="boxerBriefs" src="assets/boxerbriefs.svg">
-            <img class="undType" id="trunks" src="assets/trunks.svg">
+            <img class="undType" id="trunks" src="assets/trunks.svg"> -->
           </div>
 
-          <div class="mask">
-            <img class="undMat" id="polyester" src="assets/polyester.png">
+          <div id="materialVisual">
+
+
+            <img class="undMat mask" id="undie" src="assets/polyester.png" alt="polyester masked">
           </div>
         </div>
 
@@ -191,17 +230,22 @@
 
       <div id="desControls">
         <button type="button" value="Random" onclick="imgchange();">Randomize Background Image</button><br>
+        <br><br>
 
-        <label for="undName">Underwear Name: </label>
-        <input type="text" id="undName" name="undName"><br>
+        <label for="undName">Underwear Name: </label><br>
+        <input type="text" id="undName" name="undName">
+        <br><br><br>
 
-        <label for="undType">Underwear Type: </label>
-        <button type="button" onclick="showHide('boxers')">Boxers</button>  <button type="button" onclick="showHide('boxerBriefs')">Boxer Briefs</button> <button type="button" onclick="showHide('trunks')">Trunks</button><br>
+        <label for="undType">Underwear Type: </label><br>
+        <!-- <button type="button" id="briefs">Briefs</button>  <button type="button" id="boxerbriefs">Boxer Briefs</button> <button type="button" id="trunks">Trunks</button><br> -->
+        <button type="button" id="briefs" onclick="underwearType()" value="briefs">Briefs</button>  <button type="button" id="boxerbriefs" onclick="underwearType()" value="boxerbriefs">Boxer Briefs</button> <button type="button" id="trunks" onclick="underwearType()" value="trunks">Trunks</button><br>
+        <!-- <input type="text" id="undType" name="undType" placeholder="briefs, boxer briefs, trunks"><br><button type="button" onclick="underwearType()">Enter</button> -->
+        <br><br>
 
         <!-- <label for="undMat">Material: </label>
         <input type="number" id="undMat" name="undMat">%<input type="text" id="undMat" name="undMat"><br> -->
-        <label for="undMat">Material:</label>
-        <input type="text" id="undMat" name="undMat"><br>
+        <label for="undMat">Material:</label><br>
+        <input type="text" id="undMat" name="undMat" placeholder="eg: Cotton, Polyester, Elastane, etc."><button type="button" onclick="underwearMaterial()">Enter</button>
 
 
       </div>
