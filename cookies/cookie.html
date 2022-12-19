@@ -1,56 +1,127 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
         <meta charset="utf-8">
         <title>cookie :3</title>
         <style>
+            html{
+                cursor: url(assets/sammich.png), auto;
+            }
             
             body{
-                background-image: url(assets/wash.jpeg);
+                background-image: url(assets/wash1.png);
+                background-color: black;
                 background-size: cover;
             }
 
             #pigcont{
                 display: flex;
-                flex-direction: row;
+                flex-flow: column wrap;
+                /* justify-content: space-between; */
+                position: absolute;
+            }
+
+            .squawk {
+                position: relative;
+                display: inline-block;
+            }
+
+            .drag{
+                width: 800px;
+                position: absolute;
+                /* height: 20px; */
             }
 
             img{
-                width: 30%;
-                height:30%;
-
+                width: 300px;
             }
+
+            .squawk img:hover{
+                animation: shake 0.2s;
+                animation-iteration-count: infinite;
+                box-shadow: 0 0 20px white;
+            }
+
+            @keyframes shake {
+                0% { transform: translate(1px, 1px) rotate(0deg); }
+                10% { transform: translate(-1px, -2px) rotate(-1deg); }
+                20% { transform: translate(-3px, 0px) rotate(1deg); }
+                30% { transform: translate(3px, 2px) rotate(0deg); }
+                40% { transform: translate(1px, -1px) rotate(1deg); }
+                50% { transform: translate(-1px, 2px) rotate(-1deg); }
+                60% { transform: translate(-3px, 1px) rotate(0deg); }
+                70% { transform: translate(3px, 1px) rotate(-1deg); }
+                80% { transform: translate(-1px, -1px) rotate(1deg); }
+                90% { transform: translate(1px, 2px) rotate(0deg); }
+                100% { transform: translate(1px, -2px) rotate(-1deg); }
+            }
+
+            .welcome{
+                display: block;
+                text-align: center;
+                font-size: 50px;
+                font-family: "Comic Sans MS", "Comic Sans", cursive;
+                text-shadow: 0 0 10px white;
+                line-height: 40px;
+
+                /* text-align: center; */
+                animation: color 4s linear 0s infinite alternate;
+            }
+
+            .welcome p{
+                font-size: 30px;
+                color: white;
+            }
+
+            @keyframes color {
+                0% { color: red; } 
+                25% { color: fuchsia;}
+                50% { color: cyan;}
+                75% { color: yellow;}
+                100% { color: greenyellow; }
+            }
+
+            @keyframes moveY {
+                from { top: 0vh; } 
+                to { top: 100vh; }
+            }
+
         </style>
     </head>
 
     <body>
+        <div class="welcome">
+            ⋆｡°✩ welcome 2 ⊹˚. ♡<br> washington square park 
+            <p>go feed da pigeons!!</p>
+        </div>
         <div id="pigcont">
-            <div class="drag">
-                <img src="assets/pigeon1.png">
+            <div class="drag squawk" style="top: -100px; left: 200px;">
+                <img id="pigeon1" src="assets/pigeon1.png">
             </div>
 
-            <div class="drag">
-            <img src="assets/pigeon2.png">
+            <div class="drag squawk" style="top: 30px; left:40px;">
+                <img id="pigeon2" src="assets/pigeon2.png">
             </div>
 
-            <div class="drag">
-            <img src="assets/pigeon3.png">
+            <div class="drag squawk" style="top: 300px; left: 300px;">
+                <img id="pigeon3" src="assets/pigeon3.png">
             </div>
 
-            <div class="drag">
-            <img src="assets/pigeon4.png">
+            <div class="drag squawk" style="top: 300px; left: 645px;">
+                <img id="pigeon4" src="assets/pigeon4.png">
             </div>
 
-            <div class="drag">
-            <img src="assets/pigeon5.png">
+            <div class="drag squawk" style="top: 300px; left: 1020px;">
+                <img id="pigeon5" src="assets/pigeon5.png">
             </div>
 
-            <div class="drag">
-            <img src="assets/pigeon6.png">
+            <div class="drag squawk" style="top: -160px; left: 1000px;">
+                <img id="pigeon6" src="assets/pigeon6.png">
             </div>
 
-            <div class="drag">
-            <img src="assets/pigeon7.png">
+            <div class="drag squawk" style="top: 0px; left: 600px;">
+                <img id="pigeon7" src="assets/pigeon7.png">
             </div>
         </div>
 
