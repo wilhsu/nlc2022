@@ -51,6 +51,7 @@
 
             h1{
                 font-size:80px;
+                line-height: 75px;
                 /* font-family: puffin-arcade-liquid,sans-serif;
                 font-weight: 800;
                 font-style:normal; */
@@ -66,7 +67,7 @@
     </head>
 
     <body>
-        <h1>archive of my work from next level coding <3</h1>
+        <h1>my (will's) work from next level coding <3</h1><br>
 
         <ul>
             <li><a href="https://wilhsu.github.io/nlc2022/project1/index.html">project 1: you show-off!</a></li>
@@ -94,5 +95,14 @@
 
         </ul>
         <!-- <img id="literallyme" src="literallyme.png"> -->
+
+        <script>
+            let size = map(e.clientX, 0, window.innerWidth, 0, 100);
+            document.body.style.backgroundSize = `${size}%`;
+
+            function map(value, low1, high1, low2, high2) {
+                return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
+            }
+        </script>
     </body>
 </html>
