@@ -3,17 +3,27 @@ body{
     background-color: red;
 }
 
-#bigContainer{
+#bigCont{
     display: flex;
     flex-direction: row;
     align-items: center;
 
 }
 
-.sidebars{
+/* .sidebars{
     width: 200px;
     height: 850px;
     background-color: black;
+} */
+
+#materialtext{
+    width: 200px;
+    height: 850px;
+    background-color: black;
+}
+
+#waistbandDisplay img{
+    width: 10%;
 }
 
 #mainDesign{

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>CK Packaging generator</title>
     <link type="stylesheet" type="text/css" href="generator.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js"></script>
 
@@ -45,7 +46,7 @@
         font-family: ckReg;
         width: 200px;
         height: 400px;
-        margin: 30px;
+        margin: 10px;
         color: white;
         /* background-color: red; */
         flex-grow: 1;
@@ -54,24 +55,32 @@
 
       #desControls button, input{
         padding: 10px;
+        width: 350px;
         font-family: ckReg;
         background-color: white;
-        border-radius: 15px;
+        border-radius: 25px;
         border-style: hidden;
         margin: 5px;
+
+        text-align: center;
+      }
+
+      #desControls button:active{
+        background-color: rgb(159, 159, 159);
+        color: white;
       }
 
       #desContainer{
           display: flex;
           flex-direction: row;
           flex-grow: 2;
-          /* align-items: center; */
+
           justify-content: space-between;
           align-items: center;
 
           width: 450px;
           height: 450px;
-          background-color: rgba(255, 255, 255, 0.6);
+          background-color: rgba(255, 255, 255, 0.45);
           padding: 15px;
           margin: 70px;
           border-radius: 15px;
@@ -190,6 +199,17 @@
       #waistband{
         margin-right: 100px;
       }
+
+      @media only screen and (max-width: 600px) {
+          #bigCont{
+            display: flex;
+            flex-direction: column;
+          }
+
+          h1{
+            font-size: 50px;
+          }
+      }
     </style>
   </head>
 
@@ -218,13 +238,12 @@
           </div>
 
           <div id="materialVisual">
-
-
             <img class="undMat mask" id="undie" src="assets/polyester.png" alt="polyester masked">
           </div>
         </div>
 
-        <div id="waistband" class="sidebars">
+        <div class="sidebars" id="waistband">
+          <img id="waistbandDisplay" src="assets/wb1.png">
         </div>
       </div>
 
@@ -232,22 +251,22 @@
         <button type="button" value="Random" onclick="imgchange();">Randomize Background Image</button><br>
         <br><br>
 
+        <button type="button" value="Random" onclick="waistbandchange();">Waistband</button><br>
+        <br><br>
+
         <label for="undName">Underwear Name: </label><br>
         <input type="text" id="undName" name="undName">
         <br><br><br>
 
         <label for="undType">Underwear Type: </label><br>
-        <!-- <button type="button" id="briefs">Briefs</button>  <button type="button" id="boxerbriefs">Boxer Briefs</button> <button type="button" id="trunks">Trunks</button><br> -->
         <button type="button" id="briefs" onclick="underwearType()" value="briefs">Briefs</button>  <button type="button" id="boxerbriefs" onclick="underwearType()" value="boxerbriefs">Boxer Briefs</button> <button type="button" id="trunks" onclick="underwearType()" value="trunks">Trunks</button><br>
-        <!-- <input type="text" id="undType" name="undType" placeholder="briefs, boxer briefs, trunks"><br><button type="button" onclick="underwearType()">Enter</button> -->
         <br><br>
 
         <!-- <label for="undMat">Material: </label>
         <input type="number" id="undMat" name="undMat">%<input type="text" id="undMat" name="undMat"><br> -->
         <label for="undMat">Material:</label><br>
-        <input type="text" id="undMat" name="undMat" placeholder="eg: Cotton, Polyester, Elastane, etc."><button type="button" onclick="underwearMaterial()">Enter</button>
-
-
+        <input type="text" id="undMat" name="undMat" placeholder="Cotton, Polyester, Elastane, Modal, Nylon"><button type="button" onclick="underwearMaterial()">Enter</button>
+        <br><br>
       </div>
     </div>
 

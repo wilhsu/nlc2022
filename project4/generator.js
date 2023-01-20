@@ -14,6 +14,23 @@ function imgchange() {
   
   }
 
+function waistbandchange() {
+
+    var img = new Array();
+        img[1] = "assets/wb1.png";
+        img[2] = "assets/wb2.png";
+        img[3] = "assets/wb3.png";
+        img[4] = "assets/wb4.png";
+        img[5] = "assets/wb5.png";
+      var random = Math.floor(Math.random() * img.length);
+        if (random == 0) {
+                random = 1;
+        }
+    
+      document.getElementById("waistbandDisplay").src = img[random];
+    
+    }
+
   document.getElementById('undName').addEventListener('keyup', copyToDiv);
 
   function copyToDiv() {
