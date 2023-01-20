@@ -15,7 +15,6 @@ function imgchange() {
   }
 
 function waistbandchange() {
-
     var img = new Array();
         img[1] = "assets/wb1.png";
         img[2] = "assets/wb2.png";
